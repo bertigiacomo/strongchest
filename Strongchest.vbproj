@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{235FA550-2009-4B33-922E-6A130A8C4D18}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Strongchest.My.MyApplication</StartupObject>
+    <RootNamespace>Strongchest</RootNamespace>
+    <AssemblyName>Strongchest</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Strongchest.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Strongchest.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>strongchest.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Giacomo Berti.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D69610D0D081E0CDB79077570E076EF92F07E816</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Giacomo Berti.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control_NotificationTop.Designer.vb">
+      <DependentUpon>Control_NotificationTop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Control_NotificationTop.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form_ChangePassword.Designer.vb">
+      <DependentUpon>Form_ChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Company.Designer.vb">
+      <DependentUpon>Form_Company.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Company.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Export.Designer.vb">
+      <DependentUpon>Form_Export.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Export.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Import.Designer.vb">
+      <DependentUpon>Form_Import.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Import.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MessageBox.Designer.vb">
+      <DependentUpon>Form_MessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_MessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Notification.Designer.vb">
+      <DependentUpon>Form_Notification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Notification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_LoginSettings.Designer.vb">
+      <DependentUpon>Form_LoginSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_LoginSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DeleteAllData.Designer.vb">
+      <DependentUpon>Form_DeleteAllData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DeleteAllData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ManageSpace.Designer.vb">
+      <DependentUpon>Form_ManageSpace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ManageSpace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SelectNewPassword.Designer.vb">
+      <DependentUpon>Form_SelectNewPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SelectNewPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_WantToUpdate.Designer.vb">
+      <DependentUpon>Form_WantToUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_WantToUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mod_Cipher.vb" />
+    <Compile Include="Form_Container.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Container.Designer.vb">
+      <DependentUpon>Form_Container.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Changelog.Designer.vb">
+      <DependentUpon>Form_Changelog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Changelog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control_Element.Designer.vb">
+      <DependentUpon>Control_Element.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Control_Element.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mod_Company.vb" />
+    <Compile Include="Mod_Encryption.vb" />
+    <Compile Include="Mod_Globals.vb" />
+    <Compile Include="Mod_Functions.vb" />
+    <Compile Include="Form_GetUserData.Designer.vb">
+      <DependentUpon>Form_GetUserData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_GetUserData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Home.Designer.vb">
+      <DependentUpon>Form_Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AboutInfo.Designer.vb">
+      <DependentUpon>Form_AboutInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AboutInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control_VoidSection.Designer.vb">
+      <DependentUpon>Control_VoidSection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Control_VoidSection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mod_DataKeys.vb" />
+    <Compile Include="Mod_Logging.vb" />
+    <Compile Include="Form_LogOn.Designer.vb">
+      <DependentUpon>Form_LogOn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_LogOn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mod_Network.vb" />
+    <Compile Include="Mod_Storage.vb" />
+    <Compile Include="Mod_Themes.vb" />
+    <Compile Include="Mod_UI.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Form_Settings.Designer.vb">
+      <DependentUpon>Form_Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mod_Settings.vb" />
+    <Compile Include="Control_ImportingData.Designer.vb">
+      <DependentUpon>Control_ImportingData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Control_ImportingData.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Control_NotificationTop.resx">
+      <DependentUpon>Control_NotificationTop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChangePassword.resx">
+      <DependentUpon>Form_ChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Company.resx">
+      <DependentUpon>Form_Company.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Export.resx">
+      <DependentUpon>Form_Export.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Import.resx">
+      <DependentUpon>Form_Import.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MessageBox.resx">
+      <DependentUpon>Form_MessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Notification.resx">
+      <DependentUpon>Form_Notification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Container.resx">
+      <DependentUpon>Form_Container.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Changelog.resx">
+      <DependentUpon>Form_Changelog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_Element.resx">
+      <DependentUpon>Control_Element.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_GetUserData.resx">
+      <DependentUpon>Form_GetUserData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Home.resx">
+      <DependentUpon>Form_Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AboutInfo.resx">
+      <DependentUpon>Form_AboutInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_VoidSection.resx">
+      <DependentUpon>Control_VoidSection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_LoginSettings.resx">
+      <DependentUpon>Form_LoginSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DeleteAllData.resx">
+      <DependentUpon>Form_DeleteAllData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_LogOn.resx">
+      <DependentUpon>Form_LogOn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ManageSpace.resx">
+      <DependentUpon>Form_ManageSpace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SelectNewPassword.resx">
+      <DependentUpon>Form_SelectNewPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_WantToUpdate.resx">
+      <DependentUpon>Form_WantToUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Settings.resx">
+      <DependentUpon>Form_Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_ImportingData.resx">
+      <DependentUpon>Control_ImportingData.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Giacomo Berti.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu.png" />
+    <None Include="Resources\open.wav" />
+    <None Include="Resources\fl_updates.png" />
+    <None Include="Resources\el_music.png" />
+    <None Include="Resources\fl_tick.png" />
+    <None Include="Resources\fl_exlamation.png" />
+    <None Include="Resources\el_explorer.png" />
+    <None Include="Resources\el_image.png" />
+    <None Include="Resources\el_movie.png" />
+    <None Include="Resources\cs_photoshop.png" />
+    <None Include="Resources\notify.wav" />
+    <None Include="Resources\ui_maximize.png" />
+    <None Include="Resources\ui_minimize.png" />
+    <None Include="Resources\ui_close.png" />
+    <None Include="Resources\min.png" />
+    <None Include="Resources\online_spaces.png" />
+    <None Include="Resources\import_space.png" />
+    <None Include="Resources\reset_space.png" />
+    <None Include="Resources\strongchest_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_lock.png" />
+    <None Include="Resources\password.png" />
+    <None Include="Resources\export_from.png" />
+    <None Include="Resources\installation_box.png" />
+    <None Include="Resources\el_note.png" />
+    <None Include="Resources\el_excel.png" />
+    <None Include="Resources\el_pp.png" />
+    <None Include="Resources\el_word.png" />
+    <None Include="Resources\el_code.png" />
+    <None Include="Resources\el_folder.png" />
+    <None Include="Resources\new_update.png" />
+    <None Include="Resources\company_associated.png" />
+    <None Include="Resources\Buonarroti_Logo_Trasparente1_LogoHome.png" />
+    <None Include="Resources\ui_aspect.png" />
+    <None Include="Resources\delete_data.png" />
+    <None Include="Resources\ui_settings.png" />
+    <None Include="Resources\ui_return.png" />
+    <Content Include="strongchest.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
